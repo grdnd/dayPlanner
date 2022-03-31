@@ -1,29 +1,44 @@
+/* color variables */
+:root {
+  --accent: #B47C4A;
+  --blue: #9AA5C0;
+  --darkgray: #4C515B;
+  --gray: #918E94;
+  --lightgray: #CFC2BD;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: var(--lightgray);
 }
 
 textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
+  color: #ffffff;
   border-left: 1px solid black;
   padding: 10px;
 }
 
+code {
+  color: var(--accent);
+}
+
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-color: var(--lightgray);
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+  padding: 1rem 2rem;
 }
 
 .description {
@@ -38,27 +53,27 @@ textarea {
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;
+  border-top: 1px solid var(--lightgray);
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: var(--lightgray);
   color: #000000;
   border-top: 1px dashed #000000;
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: var(--darkgray);
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: var(--gray);
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: var(--lightgray);
   color: white;
 }
 
@@ -66,11 +81,21 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: var(--accent);
   color: white;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+.feedback {
+  display: none;
+  padding-bottom: 10px;
+  color: black;
+}
+
+.show {
+  display: block;
 }
