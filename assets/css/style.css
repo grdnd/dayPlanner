@@ -81,6 +81,8 @@ code {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
   background-color: var(--accent);
   color: white;
 }
@@ -98,4 +100,8 @@ code {
 
 .show {
   display: block;
+}
+
+.container {
+  margin-bottom: 30px;
 }
