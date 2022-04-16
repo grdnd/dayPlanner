@@ -20,7 +20,8 @@ body {
 }
 
 textarea {
-  background-color: var(--gray);
+  /* background-color: var(--gray); */
+  background-color: red;
   border: none;
   resize: none;
   color: #ffffff;
